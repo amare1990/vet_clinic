@@ -6,3 +6,8 @@
 /* Altered the id filed of animals table using the following commands */
 /* alter table animals
 alter column id add generated always as identity; */
+
+/* Query and update animals tabel -2nd milestone */
+
+ALTER TABLE animals ADD COLUMN species VARCHAR(30);
+
