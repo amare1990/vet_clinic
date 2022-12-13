@@ -1,7 +1,7 @@
 # curriculum-databases-projects-template
 
 # Vet Clinic
-This milestone of the Vet clinic database project, `Create Animals table` helps us to acquint with Postgres database and do some exercises on creatting table, populating a table with data and writing some queries. 
+This milestone of the Vet clinic database project, `Query and update Animals table` helps us exercise on altering table columns like adding columns, updating the fields, transactions using `BEGIN`, `SAVEPOINT`, `ROLLBACK`, and `COMMIT` sql statements. In addition, this milestone of the project helps us exercise on aggregate sql statements like `min`, `max`, `avg`, `count` and `group by`.
 
 
 ## Getting Started
