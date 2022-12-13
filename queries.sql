@@ -17,18 +17,21 @@ update animals
 set species = 'unspecified';
 select * from animals;
 rollback;
+select * from animals; /* Species becomes null/empty */
 
 
 BEGIN;
 UPDATE animals
 SET species = 'digimon'
 WHERE species LIKE '%mon';
+select name, species from animals;
 
 UPDATE animals
 SET species = 'pokemon'
 WHERE species IS NULL;
-
-SELECT * FROM animals;
+SELECT name, species FROM animals;
+COMMIT;
+SELECT name, species FROM animals;
 
 
 BEGIN TRANSACTION;
