@@ -38,5 +38,15 @@ set weight_kg = -1*weight_kg where weight_kg < 0; /* Nothing changed as all weig
 COMMIT;
 
 
+/* Write queries to answer the following questions: */
+How many animals are there? select count(*) from animals;
+How many animals have never tried to escape? select count(*) from animals where escape_attempts = 0;
+What is the average weight of animals? select AVG(weight_kg) from animals;
+Who escapes the most, neutered or not neutered animals? select neutered, max(escape_attempts) from animals Group by neutered;
+What is the minimum and maximum weight of each type of animal? select species, min(weight_kg), max(weight_kg) from animals GROUP BY species;
+What is the average number of escape attempts per animal type of those born between 1990 and 2000?
+select species, AVG(escape_attempts) from animals where date_of_birth between '1990-01-01' and '2000-12-31' GROUP BY species;
+
+
 
 
