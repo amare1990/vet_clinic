@@ -9,12 +9,26 @@ select * from animals where neutered = true;
 select * from animals where name != 'Gabumon';
 select * from animals where (weight_kg between 10.4 and 17.3) OR weight_kg = 10.4 OR weight_kg = 17.3;
 
-/* On Query and Update animals table: second milestone */
 
-BEGIN TRANSACTION;
+/* On Query and Update animals table: second milestone of the project */
+
+begin;
 update animals
-set species='pokemon' where species is null;
-COMMIT;
+set species = 'unspecified';
+select * from animals;
+rollback;
+
+
+BEGIN;
+UPDATE animals
+SET species = 'digimon'
+WHERE species LIKE '%mon';
+
+UPDATE animals
+SET species = 'pokemon'
+WHERE species IS NULL;
+
+SELECT * FROM animals;
 
 
 BEGIN TRANSACTION;
