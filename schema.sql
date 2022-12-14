@@ -49,4 +49,11 @@ ALTER TABLE animals
 ADD CONSTRAINT ANIMALS_PKEY
 PRIMARY KEY (id);
 
-CREATE TABLE visits (vet_id INT NOT NULL REFERENCES vets(id), animal_id INT NOT NULL REFERENCES animals (id));
+CREATE TABLE visits (animal_id INT NOT NULL REFERENCES animals (id), vet_id INT NOT NULL REFERENCES vets(id));
+
+
+
+/* 4th milestone -for the fourth day */
+ALTER TABLE visits
+ADD COLUMN date_of_visit date;
+
