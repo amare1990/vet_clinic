@@ -1,7 +1,8 @@
 # curriculum-databases-projects-template
 
-# Vet Clinic
-This milestone of the Vet clinic database project, `Query and update Animals table` helps us exercise on altering table columns like adding columns, updating the fields, transactions using `BEGIN`, `SAVEPOINT`, `ROLLBACK`, and `COMMIT` sql statements. In addition, this milestone of the project helps us exercise on aggregate sql statements like `min`, `max`, `avg`, `count` and `group by`.
+# Vet Clinic Database
+
+This milestone of the Vet clinic database project, `Query multiple tables` helps us exercise on adding foreign keys for the already created table that references to other tables, on populating data in the related tables, and write queries using `JOIN` and aggregate sql statements like `GROUP BY` to fetch the data based on the project requirement.
 
 
 ## Getting Started
