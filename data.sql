@@ -35,5 +35,32 @@ insert into animals(name, date_of_birth, escape_attempts, neutered, weight_kg, s
 values('Ditto', '2022-05-14', 4, true, 22, null);
 
 
+/* Third milestone-3rd day */
+
+/*  Inserting data into owners table */
+INSERT INTO owners (full_name, age) VALUES ('Sam Smith', 34);
+INSERT INTO owners (full_name, age) VALUES ('Jennifer Orwell', 19);
+INSERT INTO owners (full_name, age) VALUES ('Bob', 45);
+INSERT INTO owners (full_name, age) VALUES ('Melody Pond', 77);
+INSERT INTO owners (full_name, age) VALUES ('Dean Winchester', 14);
+INSERT INTO owners (full_name, age) VALUES ('Jodie Whittaker', 38);
+
+/*  Inserting data into owners table */
+INSERT INTO species (name) values ('Pokemon'), ('Digimon');
+
+UPDATE animals set species_id = 2 where name like '%mon';
+UPDATE animals set species_id = 1 where species_id IS NULL;
+
+UPDATE animals
+set owner_id = 1 where name = 'Agumon';
+UPDATE animals 
+set owner_id =2 where name = 'Gabumon' OR name = 'Pikachu';
+UPDATE animals
+set owner_id = 3 where name = 'Devimon' OR name = 'Plantmon';
+UPDATE animals
+set owner_id = 4 where name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
+UPDATE animals
+set owner_id = 5 where name = 'Angemon' OR name = 'Boarmon';
+
 
 
