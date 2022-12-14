@@ -42,4 +42,11 @@ FOREIGN KEY (owner_id)
 REFERENCES owners (id) ON DELETE CASCADE;
 
 
+/* Fourth milestone-3rd day */
+CREATE TABLE specializations (vet_id INT NOT NULL REFERENCES vets(id), species_id INT NOT NULL REFERENCES species (id));
 
+ALTER TABLE animals
+ADD CONSTRAINT ANIMALS_PKEY
+PRIMARY KEY (id);
+
+CREATE TABLE visits (vet_id INT NOT NULL REFERENCES vets(id), animal_id INT NOT NULL REFERENCES animals (id));
