@@ -2,7 +2,7 @@
 
 # Vet Clinic Database
 
-This milestone of the Vet clinic database project, `Query multiple tables` helps us exercise on adding foreign keys for the already created table that references to other tables, on populating data in the related tables, and write queries using `JOIN` and aggregate sql statements like `GROUP BY` to fetch the data based on the project requirement.
+This milestone of the Vet clinic database project, `ADD join table` helps us understand many-to-many relationships in a SQL database. In this milestone, creating join tables, populating the jojn tables with the given data, and interstingly complex query sql statements are written to retrieve important information from the database.
 
 
 ## Getting Started
