@@ -43,6 +43,10 @@ REFERENCES owners (id) ON DELETE CASCADE;
 
 
 /* Fourth milestone-3rd day */
+
+
+CREATE TABLE vets (id INT GENERATED ALWAYS AS IDENTITY, name VARCHAR(30), age INT, date_of_graduation date, PRIMARY KEY(id));
+
 CREATE TABLE specializations (vet_id INT NOT NULL REFERENCES vets(id), species_id INT NOT NULL REFERENCES species (id));
 
 ALTER TABLE animals
